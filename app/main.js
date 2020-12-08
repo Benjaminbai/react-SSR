@@ -1,13 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
-import './style/index.less';
-import logo from './static/timg.jpg'
+import { BrowserRouter } from 'react-router-dom'
+import Router from './router'
 
-function App() {
-    return <div>
-        <h1>Hello React !!!</h1>
-        <img src={logo} className="logo" />
-    </div>
-}
 
-render(<App />, document.getElementById('app'));
+render(<BrowserRouter><Router /></BrowserRouter>, document.getElementById('app'));
